@@ -16,9 +16,9 @@ def DimensionsValidation(dimensions):
 def Move(move, dimensions, initial_position, currentDirection):
     direction = currentDirection
     position = initial_position
+    dimensions = dimensions.split(" ")
     for i in move:
         if(i == "F"):
-            print("move forward")
             if(direction == "N"):
                 # se a direção for norte e a posição y for menor que a largura do ambiente, a posição é incrementada.
                 if(position[1] < int(dimensions[1]) - 1):
@@ -36,8 +36,6 @@ def Move(move, dimensions, initial_position, currentDirection):
                 if(position[0] > 0):
                     position[0] -= 1
         elif(i == "T"):
-            #back
-            print("back")
             if(direction == "N"):
                 # se a direção for norte e a posição y for maior que 0, a posição é decrementada.
                 if(position[1] > 0):
@@ -54,7 +52,7 @@ def Move(move, dimensions, initial_position, currentDirection):
                 # se a direção for oeste e a posição x for menor que o comprimento do ambiente, a posição é incrementada.
                 if(position[0] < int(dimensions[0]) - 1):
                     position[0] += 1
-        elif(i == "L"):
+        elif(i == "E"):
             # se a direção for norte, a direção é alterada para oeste.
             if(direction == "N"):
                 direction = "O"
@@ -67,11 +65,19 @@ def Move(move, dimensions, initial_position, currentDirection):
             # se a direção for leste, a direção é alterada para norte.
             elif(direction == "L"):
                 direction = "N"
-        elif(i == "R"):
-            #rotaciona para a direita
+        elif(i == "D"):
+            # se a direção for norte, a direção é alterada para leste.
             if(direction == "N"):
                 direction = "L"
+            # se a direção for leste, a direção é alterada para sul.
             elif(direction == "L"):
                 direction = "S"
+            # se a direção for sul, a direção é alterada para oeste.
             elif(direction == "S"):
                 direction = "O"
+            # se a direção for oeste, a direção é alterada para norte.
+            elif(direction == "O"):
+                direction = "N"
+                
+    
+    return direction + " " + str(position[0]) + " " + str(position[1])
