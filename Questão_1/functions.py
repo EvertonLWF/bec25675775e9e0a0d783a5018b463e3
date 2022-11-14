@@ -1,6 +1,6 @@
 import re
 
-# Função que recebe uma string e retorna verdadeiro se a string for valida.
+# Função que recebe uma string e retorna verdadeiro os movimentos forem validos.
 def MoveValidation(move):
     verify = move.upper()
     result = bool(re.match(r'^[FDET]+$', verify))
@@ -81,3 +81,39 @@ def Move(move, dimensions, initial_position, currentDirection):
                 
     
     return direction + " " + str(position[0]) + " " + str(position[1])
+
+# Função que recebe uma string das dimensões do ambiente (dimensions) e os movimentos(move) separados por uma linha e retorna a um array de objetos.
+#
+#   Objeto: [{posição, direção}, {posição, direção}, ...]
+#
+
+def getData ():
+    # Variável que armazena as linhas do input.
+    lines = []
+    # Variável que armazena as os objetos com as dimensões do ambiente e os movimentos.
+    dataArray = []
+
+    # Lê as linhas do input.
+    while True:
+        user_input = input()
+
+        if user_input == '':
+            break
+        else:
+            lines.append(user_input)
+    # Variáveis temporarias dos movimentos.
+    moveTemp = ''
+    # Variáveis temporarias das dimensões do ambiente.
+    dimensionsTemp = ''
+    
+    for index, i in enumerate(lines) :
+        if(MoveValidation(i)):
+            moveTemp += i
+        elif(DimensionsValidation(i)):
+            if(index > 0):
+                dataArray.append({'dimensions': dimensionsTemp, 'move': moveTemp})
+            moveTemp = ''
+            dimensionsTemp = i
+    dataArray.append({'dimensions': dimensionsTemp, 'move': moveTemp})   
+    
+    return dataArray
