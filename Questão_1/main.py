@@ -2,10 +2,16 @@ import sys
 import functions
 
 # Aspirador Inteligente.
-print("Bem vindo ao aspirador inteligente.")
-
-#data = input("\nInforme os dados de entrada: dimensões do ambiente largura e comprimento e sequência de movimentos:\nexemplo:\n  5 5\n  FDFEFDF\n")
-lines = []
+print("""Informe os dados de entrada para o aspirador inteligente.
+    Os dados são compostos por um par de linha conforme exemplo:
+                                                            +-----------------+
+    Linha 1 informe a largura e comprimento do ambiente  => | 5 5             |
+                                                            +-----------------+
+    Linha 2 informe a seguência dos passos               => | FDFEFDFEFDFEFDF |
+                                                            +-----------------+
+    Você pode informar quantos ambientes desejar.
+    
+    """)
 
 # Lê os dados de entrada.
 data = functions.getData()

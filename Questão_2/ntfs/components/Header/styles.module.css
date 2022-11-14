@@ -1,0 +1,36 @@
+.container {
+}
+
+.topBar {
+    padding-left: 48px;
+    height: 117px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBar .topBarLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBar .topBarMenuLink {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-right: 64px;
+    color: #7780A1
+}
+
+.text {}
+
+.squares {}
+
+.background {}
+
+
+@media only screen and (min-width: 500px) {}
