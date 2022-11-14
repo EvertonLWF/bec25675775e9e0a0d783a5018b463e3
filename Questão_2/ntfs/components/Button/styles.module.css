@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 18px;
+    box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin-left: 16px;
+    border: 2px solid #FFF;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+
+
+}

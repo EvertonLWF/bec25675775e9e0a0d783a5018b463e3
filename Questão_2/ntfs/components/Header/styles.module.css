@@ -1,11 +1,15 @@
 .container {
+    background-image: url("/images/Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .topBar {
     padding-left: 48px;
     height: 117px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -26,11 +30,108 @@
     color: #7780A1
 }
 
-.text {}
+.topBar .topBarButtonRight {
+    display: flex;
+    margin-right: 39px;
+}
 
-.squares {}
+.text {
+    margin-top: 205px;
+}
 
-.background {}
+.text .textTitleBefore {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #7780A1;
+    margin-top: 183px;
+}
 
+.text {
+    height: 151px;
+}
 
-@media only screen and (min-width: 500px) {}
+.text .textTitleAfter {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #7780A1;
+}
+
+.frame {
+    width: 737px;
+    height: 227px;
+    margin: 34px auto 47px auto;
+}
+
+.text .frame .frameTop .frameTopText {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 120px;
+    line-height: 100%;
+    text-align: left;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.text .frame .frameBottom .frameBottomText {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 120px;
+    line-height: 100%;
+    text-align: right;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.frameTop {
+    display: flex;
+}
+
+.frameTopIcon {
+    margin: 17px 0 0 8px;
+}
+
+.frameBottomIcon {
+    margin: 28px 19px 0 0;
+}
+
+.frameBottom {
+    display: flex;
+}
+
+.frameBottom {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.squares {
+    width: 100%;
+    margin-top: -100px;
+    margin-left: -10px;
+}
+
+.squares img {
+    width: 100%;
+}
+
+.logotypes {
+    width: 670px;
+    margin: 105px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 499px) {}
