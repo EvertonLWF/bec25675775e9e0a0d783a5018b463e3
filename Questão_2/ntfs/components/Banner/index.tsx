@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './styles.module.css'
+import React from 'react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
-import { Autoplay, Virtual } from 'swiper';
+import { Autoplay, Navigation, Virtual } from 'swiper';
 import { BannerItem } from '../BannerItem';
+import { Button } from '../Button';
 
 type Props = {
     onClick: (key: string) => void;
@@ -15,6 +17,8 @@ type Props = {
 export const Banner = ({ onClick, fill }: Props) => {
 
     const [width, setWidth] = useState(1920);
+    const navigationPrevRef = React.useRef(null)
+    const navigationNextRef = React.useRef(null)
 
     useEffect(() => {
 
@@ -89,29 +93,43 @@ export const Banner = ({ onClick, fill }: Props) => {
             <Swiper className={styles.swiper}
                 spaceBetween={24}
                 slidesPerView={width > 1024 ? 5 : width > 768 ? 4 : 3}
-                modules={[Autoplay]}
-                /* autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
+                modules={[Autoplay, Navigation]}
+                navigation={{
+                    prevEl: navigationPrevRef.current,
+                    nextEl: navigationNextRef.current,
                 }}
-                loop={true} */
+            /* autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}*/
+            loop={true} 
             >
                 {data.map((item, index) => (
                     <SwiperSlide onClick={() => onClick("index =")} key={index} >
-                        <BannerItem
-                            image={item.image}
-                            people={item.peoples}
-                            description={item.description}
-                            price={item.price}
-                            timeLeft={item.timeLeft}
-                            bidding={item.bidding}
-                            likes={item.likes}
-                            isLiked={item.isLiked}
-                            onClick={() => onClick("1")}
-                        />
+                        <Link href=''>
+                            <BannerItem
+                                image={item.image}
+                                people={item.peoples}
+                                description={item.description}
+                                price={item.price}
+                                timeLeft={item.timeLeft}
+                                bidding={item.bidding}
+                                likes={item.likes}
+                                isLiked={item.isLiked}
+                                onClick={() => onClick("1")}
+                            />
+                        </Link>
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <div className={styles.navigation}>
+                <div ref={navigationPrevRef} className={styles.nextButton}>
+                    <img src="images/ArrowLeft.png" alt="ArrowLeft" />
+                </div>
+                <div ref={navigationNextRef} className={styles.previousButton}>
+                    <img src="images/ArrowRight.png" alt="ArrowRight" />
+                </div>
+            </div>
         </div >
     )
 }
