@@ -6,12 +6,15 @@
     border-radius: 12px;
     margin-left: 16px;
     border: 2px solid #FFF;
-    font-family: 'Sora';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.2px;
+}
 
-
+.container:hover {
+    margin-top: -1.5px;
+    margin-bottom: 1.5px;
 }

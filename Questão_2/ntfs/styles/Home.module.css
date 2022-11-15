@@ -1,9 +1,6 @@
 .container {}
 
 .latestAuctions {
-  margin: 0 auto 100px auto;
-  width: 75%;
-  height: 884px;
 }
 
 .latestAuctions h4 {
@@ -16,6 +13,11 @@
   letter-spacing: 0.2px;
   color: #FFFFFF;
   margin-bottom: 72px;
+}
+
+.latestAuctions .itens{
+  width: 120%;
+  margin-left: -10%;
 }
 
 .footer {

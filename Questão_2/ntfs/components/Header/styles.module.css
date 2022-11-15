@@ -30,6 +30,10 @@
     color: #7780A1
 }
 
+.topBar .topBarMenuLink:hover {
+    color: #FFFFFF;
+}
+
 .topBar .topBarButtonRight {
     display: flex;
     margin-right: 39px;
@@ -129,9 +133,8 @@
 
 .logotypes {
     width: 670px;
-    margin: 105px auto 200px auto;
+    margin: 105px auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 200px;
 }
-
-@media only screen and (max-width: 499px) {}

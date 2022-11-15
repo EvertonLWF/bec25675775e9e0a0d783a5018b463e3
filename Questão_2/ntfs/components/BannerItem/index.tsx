@@ -28,7 +28,7 @@ export const BannerItem = ({
             <img src={image} alt="ntf1" />
             <div className={styles.info}>
                 <div className={styles.infoTop}>
-                    <h6>
+                    <h6 className={styles.infoTopH6}>
                         {description}
                     </h6>
                     <div className={styles.price}>
@@ -46,7 +46,7 @@ export const BannerItem = ({
             <div className={styles.footer}>
                 <div className={styles.footerLeft}>
                     {people.map((item, index) => (
-                        <img src={item} alt="icon" key={index} style={{marginLeft: index > 0 ? -10: 0}}/>
+                        <img src={item} alt="icon" key={index} style={{marginLeft:index > 0 ? -(index + 19) : 0 }}/>
                     ))}
                 </div>
                 <div className={styles.footerCenter}>{bidding} people are bidding</div>
@@ -54,7 +54,7 @@ export const BannerItem = ({
                     {isLiked ? (
                         <img src="images/Heart Icon.png" alt="icon" />
                     ) : (
-                        <img src="images/Heart Icon1.png" alt="icon" />
+                        <img src="images/Heart Icon2.png" alt="icon" />
                     )}
                     
                     <div className={styles.footerRightText}>{likes}</div>

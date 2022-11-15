@@ -21,9 +21,11 @@ const Home = () => {
       />
       <div className={styles.latestAuctions}>
         <h4>Latest live auctions</h4>
-        <Banner
-          onClick={() => { }}
-        />
+        <div className={styles.itens}>
+          <Banner
+            onClick={() => { }}
+          />
+        </div>
       </div>
 
       <footer className={styles.footer}>

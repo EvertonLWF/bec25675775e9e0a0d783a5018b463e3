@@ -15,6 +15,7 @@
 }
 
 .container img {
+    flex: 1;
     border-radius: 20px;
     width: 100%;
 }
@@ -28,21 +29,16 @@
     margin-top: 24px;
 }
 
-.infoTop h6 {
-    width: 60%;
+.infoTop .infoTopH6 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.2px;
-
-    /* Rest/White */
-
+    height: 50px;
     color: #FFFFFF;
 }
-
-
 
 .price {
     display: flex;
@@ -52,11 +48,11 @@
     gap: 10px;
     width: 100px;
     height: 36px;
-    right: 26px;
-    top: 570px;
     background: rgba(81, 76, 255, 0.15);
     border-radius: 4px;
     margin-left: 32px;
+    align-self: start;
+
 }
 
 .price h6 {
@@ -64,11 +60,12 @@
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 20px;
     text-align: center;
     letter-spacing: 0.2px;
     color: #514CFF;
-    width: 100%;
+    width: max-content;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 .infoBottom {
@@ -111,17 +108,11 @@
 
 .footerLeft {
     display: flex;
-    flex-direction: row;
-    width: 30%;
+    margin-left: -5px;
 }
 
 .footerLeft img {
-    width: 38px;
-    height: 38px;
-    border: 5px solid #060714;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
+    border: 5px solid transparent;
 }
 
 .footerCenter {
@@ -134,12 +125,13 @@
     color: #7780A1;
 }
 
-.footerRight{
+.footerRight {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 .footerRight .footerRightText {
     font-family: 'Inter';
     font-style: normal;
@@ -154,4 +146,104 @@
     width: 20px;
     height: 20px;
     margin-right: 8px;
+}
+
+@media only screen and (max-width: 1650px) {
+    .container {
+        padding: 18px;
+    }
+    
+    .infoTop {
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .infoTop .infoTopH6 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+    }
+    .price {
+        padding: 6px 8px;
+        gap: 8px;
+        width: 80px;
+        height: 30px;
+        background: rgba(81, 76, 255, 0.15);
+        border-radius: 4px;
+        margin-left: auto;
+        align-self: start;
+    }
+    .price h6 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #514CFF;
+        width: max-content;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+    .footerCenter {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0.2px;
+        color: #7780A1;
+    }
+    .footerLeft img {
+        height: 40px;
+        width: 40px;
+    }
+    .footerRight img {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding: 10px;
+    }
+
+    .price {
+        padding: 4px 8px;
+        gap: 5px;
+        width: 80px;
+        height: 28px;
+        background: rgba(81, 76, 255, 0.15);
+        border-radius: 4px;
+        margin-left: 16px;
+    }
+
+    .price h6 {
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #514CFF;
+        width: max-content;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+
+    .infoTop {
+        height: 50px;
+        margin-top: 16px;
+    }
+
+    .infoTop .infoTopH6 {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .footerLeft {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        margin-right: 16px;
+    }
+    
+    .footerLeft img {
+    }
 }
