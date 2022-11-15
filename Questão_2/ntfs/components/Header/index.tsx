@@ -62,11 +62,10 @@ export const Header = ({ label, color, onClick, fill }: Props) => {
                 <img src="images/Squares.png" alt="logo" />
             </div>
             <div className={styles.logotypes}>
-            <img src="images/Ritter Sport.png" alt="logo" />
-            <img src="images/Nike.png" alt="logo" />
-            <img src="images/Adidas.png" alt="logo" />
-            <img src="images/New Holland.png" alt="logo" />
-
+                <img src="images/Ritter Sport.png" alt="logo" />
+                <img src="images/Nike.png" alt="logo" />
+                <img src="images/Adidas.png" alt="logo" />
+                <img src="images/New Holland.png" alt="logo" />
             </div>
         </div>
     )

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Header } from '../components/Header'
+import { Banner } from '../components/Banner'
 
 const Home = () => {
   return (
@@ -18,9 +19,12 @@ const Home = () => {
         onClick={() => { }}
         fill={true}
       />
-      <main className={styles.main}>
-        main
-      </main>
+      <div className={styles.latestAuctions}>
+        <h4>Latest live auctions</h4>
+        <Banner
+          onClick={() => { }}
+        />
+      </div>
 
       <footer className={styles.footer}>
         footer

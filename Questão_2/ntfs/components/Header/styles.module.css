@@ -20,7 +20,7 @@
 }
 
 .topBar .topBarMenuLink {
-    font-family: 'Sora';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -74,7 +74,7 @@
 }
 
 .text .frame .frameTop .frameTopText {
-    font-family: 'Sora';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 120px;
@@ -85,7 +85,7 @@
 }
 
 .text .frame .frameBottom .frameBottomText {
-    font-family: 'Sora';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 120px;
@@ -129,7 +129,7 @@
 
 .logotypes {
     width: 670px;
-    margin: 105px auto;
+    margin: 105px auto 200px auto;
     display: flex;
     justify-content: space-between;
 }
