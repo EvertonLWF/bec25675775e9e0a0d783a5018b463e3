@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from '../Button'
 import styles from './styles.module.css'
 
@@ -16,18 +17,20 @@ export const Section = ({ }: Props) => {
                 <div className={styles.containerLeftButtons}>
                     <Button
                         label="Get started"
-                        color="blue"
                         onClick={() => { }}
                         fill
                     />
                     <Button
                         label="Learn more"
-                        color="blue"
+                        color="#262840"
                         onClick={() => { }}
+                        marginLeft={16}
                     />
                 </div>
             </div>
-            <div className={styles.containerRight}></div>
+            <div className={styles.containerRight}>
+                <img src="/images/Right - Image.png" alt="section" />
+            </div>
         </div>
     )
 }
