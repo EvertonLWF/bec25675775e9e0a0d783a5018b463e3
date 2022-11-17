@@ -45,10 +45,10 @@ export const Footer = ({ }: Props) => {
                 </div>
             </div>
             <div className={styles.containerRight}>
-                <p>Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit, sed egestas in. Id nam semper dolor tellus vulputate eget turpis. </p>
+                <p className={styles.p}>Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit, sed egestas in. Id nam semper dolor tellus vulputate eget turpis. </p>
                 <div className={styles.containerRightNewsletter}>
                     <Newsletter
-                        label="Newsletter"
+                        label="Sign in"
                         color="#262840"
                         onClick={() => { }}
                     />

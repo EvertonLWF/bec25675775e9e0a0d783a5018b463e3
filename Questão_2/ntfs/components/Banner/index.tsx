@@ -5,9 +5,8 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
-import { Autoplay, Navigation, Virtual } from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
 import { BannerItem } from '../BannerItem';
-import { Button } from '../Button';
 
 type Props = {
     onClick: (key: string) => void;
@@ -90,7 +89,8 @@ export const Banner = ({ onClick, fill }: Props) => {
 
     return (
         <div className={styles.container}>
-            <Swiper className={styles.swiper}
+            <Swiper 
+                className={styles.swiper}
                 spaceBetween={24}
                 slidesPerView={width > 1024 ? 5 : width > 768 ? 4 : 3}
                 modules={[Autoplay, Navigation]}
@@ -98,11 +98,11 @@ export const Banner = ({ onClick, fill }: Props) => {
                     prevEl: navigationPrevRef.current,
                     nextEl: navigationNextRef.current,
                 }}
-            autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-            }}
-            loop={true} 
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
+                loop={true}
             >
                 {data.map((item, index) => (
                     <SwiperSlide onClick={() => onClick("index =")} key={index} >

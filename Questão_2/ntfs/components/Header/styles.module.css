@@ -1,13 +1,14 @@
 .container {
     background-image: url("/images/Background.png");
-    background-position-y: 28px;
+/*     background-position-y: 28px; */
+    background-position: center;
+    background-position-y: -10px;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: fit-content;
+    background-size: cover;
 }
 
 .topBar {
-    padding-left: 48px;
+    padding-left: 2.5%;
     height: 117px;
     display: flex;
     justify-content: space-between;
@@ -289,7 +290,8 @@
 }
 
 @media only screen and (max-width: 577px) {
-    .topBar .topBarButtonRight {
+    /* .topBar .topBarButtonRight {
         display: none;
-    }
+    } */
+
 }
