@@ -1,7 +1,6 @@
 .container {}
 
-.latestAuctions {
-}
+.latestAuctions {}
 
 .latestAuctions h4 {
   font-family: 'Sora';
@@ -15,15 +14,25 @@
   margin-bottom: 72px;
 }
 
-.latestAuctions .itens{
+.latestAuctions .itens {
   width: 120%;
   margin-left: -10%;
 }
 
-.footer {
-  background-color: green;
+.line {
+  border: 1px solid #262840;
+  margin: 100px auto 148px auto;
+  width: 71%;
 }
 
+.containerSectionWithIcon{
+  width: 49%;
+  height: fit-content;
+  margin: 0 auto 183px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 @media (max-width: 600px) {
   .grid {

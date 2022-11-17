@@ -2,6 +2,7 @@
     margin: 100px auto 0 auto;
     width: 71%;
     display: flex;
+    justify-content: space-between;
 }
 
 .container .containerLeft span {
@@ -62,7 +63,15 @@
 }
 
 .containerRight {
-    max-width: 50%;
+    max-width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.containerRight img {
+    width: 684px;
+    border-radius: 20px;
 }
 
 .containerLeftButtons {
@@ -84,9 +93,16 @@
 
     .containerRight img {
         margin-top: 10%;
-        width: 100%;
+        width: 71%;
     }
 
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .containerRight img {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -98,13 +114,20 @@
 
 }
 
+@media only screen and (max-width: 900px) {
+
+    .containerRight img {
+        width: 80%;
+    }
+}
+
 @media only screen and (max-width: 800px) {
 
     .containerRight img {
         display: none;
     }
 
-    .container .containerLeft p{
+    .container .containerLeft p {
         font-size: 14px;
     }
 

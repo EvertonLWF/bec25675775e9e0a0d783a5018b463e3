@@ -1,10 +1,14 @@
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 12px 24px;
     border-radius: 12px;
     border: 2px solid;
+    height: 52px;
+}
+.container .label{
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
@@ -14,8 +18,10 @@
 }
 
 .container:hover {
-    margin-top: -1.5px;
-    margin-bottom: 1.5px;
+    color: #a6b3e2 !important;
+    border-color: #a6b3e2;
+    transform: scale(1.025);
+    transition: all 0.45s;
 }
 
 @media only screen and (max-width: 1300px) {

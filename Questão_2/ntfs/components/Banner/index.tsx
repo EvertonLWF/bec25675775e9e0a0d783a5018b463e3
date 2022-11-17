@@ -98,10 +98,10 @@ export const Banner = ({ onClick, fill }: Props) => {
                     prevEl: navigationPrevRef.current,
                     nextEl: navigationNextRef.current,
                 }}
-            /* autoplay={{
+            autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,
-            }}*/
+            }}
             loop={true} 
             >
                 {data.map((item, index) => (

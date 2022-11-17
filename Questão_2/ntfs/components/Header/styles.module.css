@@ -1,8 +1,9 @@
 .container {
     background-image: url("/images/Background.png");
-    background-position: center;
+    background-position-y: 28px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    height: fit-content;
 }
 
 .topBar {
@@ -61,7 +62,7 @@
 }
 
 .text {
-    height: 151px;
+    height: fit-content;
 }
 
 .text .textTitleAfter {
@@ -73,11 +74,12 @@
     letter-spacing: 0.2px;
     text-align: center;
     color: #7780A1;
+    margin-top: -10px;
 }
 
 .frame {
-    width: 787px;
-    height: 227px;
+    width: 837px;
+    height: fit-content;
     margin: 34px auto 47px auto;
 }
 
@@ -124,7 +126,7 @@
 
 .squares {
     width: 100%;
-    margin-top: -100px;
+    margin-top: -18.5%;
     margin-left: -10px;
 }
 
@@ -137,7 +139,7 @@
     margin: 105px auto;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 200px;
+    padding-bottom: 85px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -238,6 +240,7 @@
         padding-bottom: 200px;
 
     }
+
     .topBar .topBarMenuLink {
         display: none;
     }

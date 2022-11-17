@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 212px;
+    height: 131px;
+}
+
+.container img {
+    width: 32px;
+    height: 32px;
+}
+
+.container span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* On White/Grey 100 */
+
+    color: #7780A1;
+}
+
+.container h2 {
+    /* H2 */
+
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 115%;
+    /* or 55px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* Rest/White */
+
+    color: #FFFFFF;
+    margin: -1px;
+    margin-top: 15px;
+    margin-bottom: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+@media only screen and (max-width: 1800px) {
+    .container{
+        width: 192px;
+        height: fit-content;
+    }
+    .container h2{
+        font-size: 42px;
+    }
+    .container img{
+        width: 31px;
+        height: 31px;
+    }
+    .container span{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1650px) {
+    .container{
+        width: 172px;
+        height: fit-content;
+    }
+    .container h2{
+        font-size: 39px;
+    }
+    .container img{
+        width: 28px;
+        height: 28px;
+    }
+    .container span{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .container{
+        width: 152px;
+        height: fit-content;
+    }
+    .container h2{
+        font-size: 37px;
+    }
+    .container img{
+        width: 28px;
+        height: 28px;
+    }
+    .container span{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .container{
+        width: 132px;
+        height: fit-content;
+    }
+    .container h2{
+        font-size: 35px;
+    }
+    .container img{
+        width: 26px;
+        height: 26px;
+    }
+    .container span{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container{
+        width: 102px;
+        height: fit-content;
+    }
+    .container h2{
+        font-size: 28px;
+    }
+    .container img{
+        width: 20px;
+        height: 20px;
+    }
+    .container span{
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .container{
+        width: 88px;
+        height: fit-content;
+    }
+    .container h2{
+        font-size: 14px;
+    }
+    .container img{
+        width: 15px;
+        height: 15px;
+    }
+    .container span{
+        font-size: 9px;
+    }
+}
