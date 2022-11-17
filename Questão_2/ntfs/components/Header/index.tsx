@@ -31,7 +31,7 @@ export const Header = ({ label, color, onClick, fill }: Props) => {
                         label="Contact"
                         color="#7780A1"
                         onClick={() => { }}
-                        />
+                    />
                     <Button
                         label="My account"
                         onClick={() => { }}
@@ -40,6 +40,7 @@ export const Header = ({ label, color, onClick, fill }: Props) => {
                     />
                 </div>
             </div>
+            {/* ok */}
             <div className={styles.text}>
                 <div className={styles.textTitleBefore}>Non Fungible Tokens</div>
                 <div className={styles.frame}>
