@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     width: 121.667vw;
-    /*  height: 39.948vw;*/
-    margin-left: -11.593vw;
+    margin-left: -12vw;
 }
 
 .swiper {
@@ -11,11 +10,13 @@
 }
 
 .navigation {
+    position: absolute;
     display: flex;
-    flex: 1;
-    justify-content: space-between;
-    padding: 0 7vw 0 10vw;
+    width: 121.667vw;
+    justify-content: flex-start;
+    margin: -26.513vw 0 26.513vw 0;
 }
+
 
 .navigation img{
     width: 0.375vw;
@@ -33,9 +34,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
     cursor: pointer;
-    margin-top: -26.513vw;
+    margin-left: 9.5vw;
+    z-index: 2;
 }
 
 .previousButton {
@@ -49,9 +50,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
     cursor: pointer;
-    margin-top: -26.513vw;
+    margin-left: 66.9vw;
+    z-index: 2;
 }
 
 .nextButton:hover {
@@ -61,4 +62,60 @@
 
 .previousButton:hover {
     backdrop-filter: blur(15.5px);
+}
+
+@media only screen and (max-width: 1701px) {
+
+    .previousButton {
+        margin-left: 67.5vw;
+    }
+}
+
+@media only screen and (max-width: 1401px) {
+
+    .previousButton {
+        margin-left: 68.0vw;
+    }
+
+}
+
+@media only screen and (max-width: 1201px) {
+
+    .previousButton {
+        margin-left: 68.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 1001px) {
+
+    .previousButton {
+        margin-left: 69.2vw;
+    }
+
+}
+
+@media only screen and (max-width: 801px) {
+
+    .previousButton {
+        margin-left: 70.2vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 701px) {
+
+    .previousButton {
+        margin-left: 70.8vw;
+    }
+
+}
+
+@media only screen and (max-width: 601px) {
+
+    .previousButton {
+        margin-left: 72.8vw;
+    }
+
 }

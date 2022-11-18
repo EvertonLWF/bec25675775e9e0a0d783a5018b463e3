@@ -96,10 +96,10 @@
 
 .footer {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     margin-top: 1.25vw;
-    width: 100%;
 }
 
 .footerLeft {

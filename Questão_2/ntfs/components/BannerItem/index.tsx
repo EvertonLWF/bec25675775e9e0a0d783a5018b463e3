@@ -39,7 +39,7 @@ export const BannerItem = ({
                     <div className={styles.infoBottomIcon}>
                         <img src="images/Timer Icon.png" alt="icon" />
                     </div>
-                    <div className={styles.infoBottomTimeLeft}>{timeLeft} min left</div>
+                    <div className={styles.infoBottomTimeLeft}>{timeLeft}</div>
                 </div>
                 <div className={styles.line} />
             </div>

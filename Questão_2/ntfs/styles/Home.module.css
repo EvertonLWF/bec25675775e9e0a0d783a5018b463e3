@@ -21,18 +21,12 @@
 }
 
 .containerSectionWithIcon{
-  width: 49%;
-  height: fit-content;
-  margin: 0 auto 183px auto;
+  width: 47.917vw;
+  height: 7.031vw;
+  margin: 0 auto 9.531vw auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    flex-direction: column;
-  }
 }
 
 @media (prefers-color-scheme: dark) {

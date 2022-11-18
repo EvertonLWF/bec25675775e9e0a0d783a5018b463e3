@@ -24,7 +24,6 @@ export const Section = ({ }: Props) => {
                         label="Learn more"
                         color="#262840"
                         onClick={() => { }}
-                        marginLeft={16}
                     />
                 </div>
             </div>

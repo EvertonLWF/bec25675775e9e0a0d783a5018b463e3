@@ -1,134 +1,64 @@
 .container {
-    margin: 100px auto 0 auto;
-    width: 71%;
+    margin: 5.208vw auto 0 auto;
+    width: 72.500vw;
     display: flex;
     justify-content: space-between;
 }
 
+.containerLeft {
+    width: 30.729vw;
+    height:21.146vw;
+    margin: 5.469vw 6.979vw 5.469vw 0;
+}
+
 .container .containerLeft span {
-    margin-top: 105px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 0.781vw;
+    line-height: 0.938vw;
     display: flex;
     align-items: center;
-    letter-spacing: 3px;
+    letter-spacing: 0.156vw;
     text-transform: uppercase;
-
-    /* On White/Grey 100 */
-
     color: #7780A1;
 }
 
 .container .containerLeft h1 {
-    /* H1 */
-
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 3.333vw;
     line-height: 100%;
-    /* or 64px */
-
-    letter-spacing: 0.2px;
-
-    /* Rest/White */
-
+    letter-spacing:0.010vw;
     color: #FFFFFF;
-    width: 590px;
-
-    margin: 16px 0 32px 0;
+    margin: 0.833vw 0 1.667vw 0;
 }
 
 .container .containerLeft p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    /* or 24px */
-
-    letter-spacing: 0.2px;
-
-    /* On White/Grey 100 */
-
+    font-size: 0.833vw;
+    line-height: 1.250vw;
+    letter-spacing:0.010vw;
     color: #7780A1;
-    width: 80%;
-}
-
-.containerLeft {
-    max-width: 50%;
-}
-
-.containerRight {
-    max-width: 60%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.containerRight img {
-    width: 684px;
-    border-radius: 20px;
+    width:23.906vw
 }
 
 .containerLeftButtons {
+    margin-top: 2.500vw;
+    width: 15.729vw;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 48px;
+    justify-content: space-between;
 }
 
-
-@media only screen and (max-width: 1300px) {
-
-    .container .containerLeft h1 {
-        font-weight: 600;
-        font-size: 44px;
-        width: 450px;
-        margin: 16px 0 32px 0;
-    }
-
-    .containerRight img {
-        margin-top: 10%;
-        width: 71%;
-    }
-
+.containerRight {
+    width: 35.625vw;
+    height: 32.083vw;
 }
 
-@media only screen and (max-width: 1600px) {
-
-    .containerRight img {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-
-    .containerRight img {
-        margin: 20% 0 0 20%;
-        width: 100%;
-    }
-
-}
-
-@media only screen and (max-width: 900px) {
-
-    .containerRight img {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-
-    .containerRight img {
-        display: none;
-    }
-
-    .container .containerLeft p {
-        font-size: 14px;
-    }
-
+.containerRight img {
+   width: 35.625vw;
+   height: 32.083vw;
 }
