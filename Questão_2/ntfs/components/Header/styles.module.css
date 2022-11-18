@@ -51,9 +51,6 @@
     justify-content: space-between;
 }
 
-.text {}
-
-
 .text {
     display: flex;
     flex-direction: column;
@@ -153,6 +150,7 @@
     align-items: center;
     margin-top: -10px;
 }
+
 .frameBottomIcon {
     margin: 28px 19px 0 0;
 }
@@ -170,15 +168,14 @@
 }
 
 .logotypes {
-    width: 670px;
-    margin: 105px auto;
+    width: 34.896vw;
+    margin: 5.469vw auto;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 85px;
+    padding-bottom: 4.427vw;
 }
 
-.topBarButtonRightHamburger {
-    display: none;
-    width: 50px;
-    height: 50px;
+.logotypes img{
+    width: 4.427vw;
+    height: 2.344vw;
 }

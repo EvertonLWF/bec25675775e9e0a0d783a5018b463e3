@@ -46,7 +46,10 @@ export const BannerItem = ({
             <div className={styles.footer}>
                 <div className={styles.footerLeft}>
                     {people.map((item, index) => (
-                        <img src={item} alt="icon" key={index} style={{marginLeft:index > 0 ? -(index + 19) : 0 }}/>
+                        <img src={item} alt="icon" key={index} style={{
+                            zIndex: index,
+                            marginLeft: index > 0 ? '-0.45vw' : 0,
+                        }}/>
                     ))}
                 </div>
                 <div className={styles.footerCenter}>{bidding} people are bidding</div>

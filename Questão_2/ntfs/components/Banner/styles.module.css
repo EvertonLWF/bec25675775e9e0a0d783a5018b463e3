@@ -1,134 +1,64 @@
-.container {
+.container .swiper {
+    display: flex;
+    align-items: center;
+    width: 121.667vw;
+    /*  height: 39.948vw;*/
+    margin-left: -11.593vw;
 }
 
 .swiper {
     color: black;
 }
 
-@media only screen and (min-width: 500px) {
-    /* .container {
-        padding: 0 200px 50px 200px;
-    }
-    
-    .swiper {
-        color: black;
-    }
-    
-    .swiper img {
-        object-fit: fill;
-    } */
+.navigation {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 7vw 0 10vw;
 }
 
-.navigation {
-    color: antiquewhite;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 17.5%;
+.navigation img{
+    width: 0.375vw;
+    height: 0.833vw;
 }
+
 .nextButton {
     background: rgba(38, 40, 64, 0.8);
-    box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+    box-shadow: 0px 1.302vw 3.906vw rgba(6, 7, 20, 0.1);
     backdrop-filter: blur(3.5px);
     /* Note: backdrop-filter has minimal browser support */
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
+    width: 6.25vw;
+    height: 6.25vw;
+    border-radius: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
     cursor: pointer;
-    margin-top: -33.5%;
-}
-
-.nextButton:hover{
-    background: rgba(38, 40, 64, 0.9);
+    margin-top: -26.513vw;
 }
 
 .previousButton {
     background: rgba(38, 40, 64, 0.8);
-    box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+    box-shadow: 0px 1.302vw 3.906vw rgba(6, 7, 20, 0.1);
     backdrop-filter: blur(3.5px);
     /* Note: backdrop-filter has minimal browser support */
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
+    width: 6.25vw;
+    height: 6.25vw;
+    border-radius: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
     cursor: pointer;
-    margin-top: -33.5%;
+    margin-top: -26.513vw;
 }
 
-@media only screen and (max-width: 1600px) {
-    .navigation {
-        padding: 0 17%;
-    }
-    .nextButton {
-        width: 108px;
-        height: 108px;
-        margin-top: -400px;
-    }
-    
-    .previousButton {
-        width: 110px;
-        height: 110px;
-        margin-top: -400px;
-    }
+.nextButton:hover {
+    backdrop-filter: blur(15.5px);
 
 }
 
-@media only screen and (max-width: 1200px) {
-    .navigation {
-        padding: 0 17.3%;
-    }
-    .nextButton {
-        width: 98px;
-        height: 98px;
-        margin-top: -370px;
-    }
-    
-    .previousButton {
-        width: 98px;
-        height: 98px;
-        margin-top: -370px;
-    }
-
-}
-
-@media only screen and (max-width: 1024px) {
-    .navigation {
-        padding: 0 21.7%;
-    }
-    .nextButton {
-        width: 88px;
-        height: 88px;
-        margin-top: -370px;
-    }
-    
-    .previousButton {
-        width: 88px;
-        height: 88px;
-        margin-top: -370px;
-    }
-
-}
-
-@media only screen and (max-width: 840px) {
-    .navigation {
-        padding: 0 21.3%;
-    }
-    .nextButton {
-        width: 78px;
-        height: 78px;
-        margin-top: -360px;
-    }
-    
-    .previousButton {
-        width: 78px;
-        height: 78px;
-        margin-top: -360px;
-    }
-
+.previousButton:hover {
+    backdrop-filter: blur(15.5px);
 }

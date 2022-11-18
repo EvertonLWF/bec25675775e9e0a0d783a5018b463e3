@@ -6,23 +6,18 @@
   font-family: 'Sora';
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 1.875vw;
+  line-height: 2.344vw  ;
   text-align: center;
   letter-spacing: 0.2px;
   color: #FFFFFF;
-  margin-bottom: 72px;
-}
-
-.latestAuctions .itens {
-  width: 120%;
-  margin-left: -10%;
+  margin-bottom: 3.75vw;
 }
 
 .line {
   border: 1px solid #262840;
-  margin: 100px auto 148px auto;
-  width: 71%;
+  margin: 5.208vw auto 7.708vw auto;
+  width: 72.5vw;
 }
 
 .containerSectionWithIcon{

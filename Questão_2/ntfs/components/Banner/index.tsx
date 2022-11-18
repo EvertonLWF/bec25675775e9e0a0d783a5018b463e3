@@ -15,25 +15,10 @@ type Props = {
 
 export const Banner = ({ onClick, fill }: Props) => {
 
-    const [width, setWidth] = useState(1920);
     const navigationPrevRef = React.useRef(null)
     const navigationNextRef = React.useRef(null)
 
-    useEffect(() => {
-
-        function handleResize() {
-            // Set window width/height to state
-            setWidth(window.innerWidth);
-            console.log(window.innerWidth);
-        }
-        window.addEventListener("resize", handleResize);
-
-        handleResize();
-
-        // Remove event listener on cleanup
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
+    
     const [data, setData] = useState([
         {
             image: 'images/Image3.png',
@@ -91,8 +76,8 @@ export const Banner = ({ onClick, fill }: Props) => {
         <div className={styles.container}>
             <Swiper 
                 className={styles.swiper}
-                spaceBetween={24}
-                slidesPerView={width > 1024 ? 5 : width > 768 ? 4 : 3}
+                spaceBetween={50}
+                slidesPerView={5}
                 modules={[Autoplay, Navigation]}
                 navigation={{
                     prevEl: navigationPrevRef.current,

@@ -1,23 +1,21 @@
 .container {
     box-sizing: border-box;
+    width: 23.333vw;
+/*  height: 39.948vw;*/
     border: 1px solid #262840;
-    border-radius: 20px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+    border-radius: 1.042vw;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    padding: 24px;
-    width: 100%;
-    margin-bottom: 2px;
+    padding: 1.042vw;
+    flex-grow: 0;
 }
 
 .container img {
-    flex: 1;
-    border-radius: 20px;
-    width: 100%;
+    border-radius: 1.042vw;
+    width: 20.833vw;
+    height: 27.083vw;
 }
 
 .infoTop {
@@ -25,18 +23,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
-    margin-top: 24px;
+    height: 2.604vw;
+    margin-top: 1.25vw;
 }
 
 .infoTop .infoTopH6 {
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 1.042vw;
+    line-height: 1.302vw;
     letter-spacing: 0.2px;
-    height: 50px;
+    height: 2.604vw;
     color: #FFFFFF;
 }
 
@@ -44,13 +42,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 12px;
-    gap: 10px;
-    width: 100px;
-    height: 36px;
+    padding: 0.417vw 0.625vw;
+    gap: 0.521vw;
+    width: 5.21vw;
+    height: 1.875vw;
     background: rgba(81, 76, 255, 0.15);
-    border-radius: 4px;
-    margin-left: 32px;
+    border-radius: 0.208vw;
+    margin-left: 1.667vw;
     align-self: start;
 
 }
@@ -59,7 +57,7 @@
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 0.833vw;
     text-align: center;
     letter-spacing: 0.2px;
     color: #514CFF;
@@ -73,186 +71,83 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 1.25vw;
 }
 
 .infoBottom .infoBottomTimeLeft {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.729vw;
     line-height: 150%;
     letter-spacing: 0.2px;
     color: #FFFFFF;
 }
 
 .infoBottomIcon img {
-    height: 20px;
-    width: 20px;
-    margin-right: 8px;
+    height: 1.042vw;
+    width: 1.042vw;
 }
 
 .line {
-    margin-top: 28px;
+    margin-top: 1.458vw;
     border: 1px solid #262840;
 }
 
 .footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 24px;
+    justify-content: space-between;
+    margin-top: 1.25vw;
     width: 100%;
 }
 
 .footerLeft {
-    display: flex;
-    margin-left: -5px;
+    gap: 0.833vw;
 }
 
 .footerLeft img {
-    border: 5px solid transparent;
+    width: 2.079vw;
+    height: 2.079vw;
 }
 
 .footerCenter {
+    flex: 1;
+    width: 7.76vw;
+    height: 1.094vw;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.729vw;
     line-height: 150%;
     letter-spacing: 0.2px;
     color: #7780A1;
+    margin-left: 0.738vw;
 }
 
 .footerRight {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    padding: 0px;
+    gap: 0.417vw;
+    width: 2.76vw;
+    height: 1.094vw;
 }
 
 .footerRight .footerRightText {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.729vw;
     line-height: 150%;
     letter-spacing: 0.2px;
     color: #7780A1;
 }
 
 .footerRight img {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
-
-@media only screen and (max-width: 1650px) {
-    .container {
-        padding: 18px;
-    }
-    
-    .infoTop {
-        height: 50px;
-        margin-top: 20px;
-    }
-
-    .infoTop .infoTopH6 {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 19px;
-    }
-    .price {
-        padding: 6px 8px;
-        gap: 8px;
-        width: 80px;
-        height: 30px;
-        background: rgba(81, 76, 255, 0.15);
-        border-radius: 4px;
-        margin-left: auto;
-        align-self: start;
-    }
-    .price h6 {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        text-align: center;
-        letter-spacing: 0.1px;
-        color: #514CFF;
-        width: max-content;
-        font-weight: inherit;
-        line-height: inherit;
-    }
-    .footerCenter {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 130%;
-        letter-spacing: 0.2px;
-        color: #7780A1;
-    }
-    .footerLeft img {
-        height: 40px;
-        width: 40px;
-    }
-    .footerRight img {
-        width: 20px;
-        height: 20px;
-    }
-}
-@media only screen and (max-width: 1200px) {
-    .container {
-        padding: 10px;
-    }
-
-    .price {
-        padding: 4px 8px;
-        gap: 5px;
-        width: 80px;
-        height: 28px;
-        background: rgba(81, 76, 255, 0.15);
-        border-radius: 4px;
-        margin-left: 16px;
-    }
-
-    .price h6 {
-        font-weight: 400;
-        font-size: 12px;
-        text-align: center;
-        letter-spacing: 0.2px;
-        color: #514CFF;
-        width: max-content;
-        font-weight: inherit;
-        line-height: inherit;
-    }
-
-    .infoTop {
-        height: 50px;
-        margin-top: 16px;
-    }
-
-    .infoTop .infoTopH6 {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 15px;
-    }
-    .footerLeft {
-        display: flex;
-        flex-direction: row;
-        width: 20%;
-        margin-right: 16px;
-    }
-    
-    .footerLeft img {
-        height: 30px;
-        width: 30px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .footerLeft{
-        display: none;
-    }
-
+    width: 1.042vw;
+    height: 1.042vw;
+    margin-right: 0.117vw;
 }
