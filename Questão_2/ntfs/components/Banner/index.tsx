@@ -18,7 +18,17 @@ export const Banner = ({ onClick, fill }: Props) => {
     const navigationPrevRef = React.useRef(null)
     const navigationNextRef = React.useRef(null)
 
-    
+    const RefBanner = React.useRef(null)
+
+    const [swiperInstance, setSwiperInstance] = useState<any>(null)
+
+    useEffect(() => {
+
+        //console.log(swiperInstance)
+        
+    }, [swiperInstance]);
+
+
     const [data, setData] = useState([
         {
             image: 'images/Image3.png',
@@ -73,40 +83,46 @@ export const Banner = ({ onClick, fill }: Props) => {
     ]);
 
     return (
-        <div className={styles.container}>
-            <Swiper 
-                className={styles.swiper}
-                spaceBetween={50}
-                slidesPerView={5}
-                modules={[Autoplay, Navigation]}
-                navigation={{
-                    prevEl: navigationPrevRef.current,
-                    nextEl: navigationNextRef.current,
-                }}
-                autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                }}
-                loop={true}
-            >
-                {data.map((item, index) => (
-                    <SwiperSlide onClick={() => onClick("index =")} key={index} >
-                        <Link href=''>
-                            <BannerItem
-                                image={item.image}
-                                people={item.peoples}
-                                description={item.description}
-                                price={item.price}
-                                timeLeft={item.timeLeft}
-                                bidding={item.bidding}
-                                likes={item.likes}
-                                isLiked={item.isLiked}
-                                onClick={() => onClick("1")}
-                            />
-                        </Link>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+        <>
+            <div className={styles.container}>
+                <Swiper
+                    className={styles.swiper}
+                    spaceBetween={50}
+                    slidesPerView={5}
+                    modules={[Autoplay, Navigation]}
+                    navigation={{
+                        prevEl: navigationPrevRef.current,
+                        nextEl: navigationNextRef.current,
+                    }}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+                    loop
+                    updateOnWindowResize
+                    observer
+                    observeParents
+                    onSwiper={setSwiperInstance}
+                >
+                    {data.map((item, index) => (
+                        <SwiperSlide onClick={() => onClick("index =")} key={index} >
+                            <Link href=''>
+                                <BannerItem
+                                    image={item.image}
+                                    people={item.peoples}
+                                    description={item.description}
+                                    price={item.price}
+                                    timeLeft={item.timeLeft}
+                                    bidding={item.bidding}
+                                    likes={item.likes}
+                                    isLiked={item.isLiked}
+                                    onClick={() => onClick("1")}
+                                />
+                            </Link>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div >
             <div className={styles.navigation}>
                 <div ref={navigationPrevRef} className={styles.nextButton}>
                     <img src="images/ArrowLeft.png" alt="ArrowLeft" />
@@ -115,6 +131,6 @@ export const Banner = ({ onClick, fill }: Props) => {
                     <img src="images/ArrowRight.png" alt="ArrowRight" />
                 </div>
             </div>
-        </div >
+        </>
     )
 }
