@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 12px 1.2552vw;
+    padding: 0.625vw 1.2552vw;
     border-radius: 0.6276150627615062vw;
-    border: 2px solid;
+    border: 0.104vw solid;
     height:  2.719665vw;
 }
 .container .label{
@@ -14,7 +14,7 @@
     font-weight: 600;
     font-size: 0.8368vw;
     line-height: 1.0460251vw;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0104vw;
 }
 
 .container:hover {

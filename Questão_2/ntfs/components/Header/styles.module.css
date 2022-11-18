@@ -49,6 +49,8 @@
 .topBar .topBarButtonRight {
     display: flex;
     justify-content: space-between;
+    width: 14.479vw;
+    height: 2.708vw;
 }
 
 .text {

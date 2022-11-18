@@ -35,7 +35,6 @@ export const Header = ({ label, color, onClick, fill }: Props) => {
                     <Button
                         label="My account"
                         onClick={() => { }}
-                        marginLeft={18}
                         fill
                     />
                 </div>
