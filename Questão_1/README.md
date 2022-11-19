@@ -23,7 +23,7 @@ python main.py
 ```
 
 Informe a largura e comprimento do ambiente ex: 5 5, na próxima linha informe a seguência dos passos ex: FDFEFDFEFDFEFDF, pode ser inserido mais pares de dados ou pressionar enter 2x para executar.
-```sh
+```
 
 Informe os dados de entrada para o aspirador inteligente.
     Os dados são compostos por um par de linha conforme exemplo:

@@ -1,4 +1,4 @@
-# Questão 2
+# Questão 3
 
 Esta atividade foi utilizado o [PostgreSQL](https://www.postgresql.org/).
 
