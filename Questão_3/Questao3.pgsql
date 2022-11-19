@@ -56,7 +56,7 @@ FROM
     INNER JOIN CONTRATOS ON PESSOAS.CONTRATO_ID = CONTRATOS.ID
     INNER JOIN pagamentos ON PESSOAS.ID = pagamentos.pessoa_id
 WHERE
-    PESSOAS.dt_completo IS NULL
+    PESSOAS.inadiplente = 'S'
 ORDER BY
     PESSOAS.nome,
     PAGAMENTOS.data_pagamento;
